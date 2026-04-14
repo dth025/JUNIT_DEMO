@@ -19,4 +19,9 @@ class MainTest {
     void shouldReturnMaxWhenHigherValueAtEnd() {
         assertEquals(9, Main.findMax(new int[]{3, 5, 9, 2}));
     }
+
+    @Test
+    void shouldCoverNoUpdateBranchInLoop() {
+        assertEquals(5, Main.findMax(new int[]{5, 3, 1}));
+    }
 }
