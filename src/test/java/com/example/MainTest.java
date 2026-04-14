@@ -24,4 +24,14 @@ class MainTest {
     void shouldCoverNoUpdateBranchInLoop() {
         assertEquals(5, Main.findMax(new int[]{5, 3, 1}));
     }
+
+    @Test
+    void shouldReturnSingleElementForSingleElementArray() {
+        assertEquals(7, Main.findMax(new int[]{7}));
+    }
+
+    @Test
+    void shouldReturnMaxWhenFirstValueIsGreatest() {
+        assertEquals(10, Main.findMax(new int[]{10, 4, 2, 1}));
+    }
 }
